@@ -1,0 +1,8 @@
+@import "@/styles/mixins";
+
+.container {
+  max-width: rems(1410);
+  margin: 0 auto;
+  padding: 0 rems(15);
+  box-sizing: content-box;
+}
