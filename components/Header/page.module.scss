@@ -1,4 +1,7 @@
 .header {
   background: $primary;
   min-height: rems(205);
+  &__top {
+    padding: rems(22) 0;
+  }
 }

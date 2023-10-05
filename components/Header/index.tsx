@@ -1,26 +1,24 @@
 import React from "react";
-
-import Image from "next/image";
-import Link from "next/link";
-
-import Container from "../Container";
 import styles from "./page.module.scss";
+import Container from "../Container";
+import Image from "next/image";
 
 const Header = () => {
   return (
     <header className={styles.header}>
       <Container>
-        <div className={styles.header__info}>
-          <div className={styles.header__infoLeft}>
-            <Link className={styles.header__logoWrapper} href={"/"}>
-              <Image src={"logo.svg"} fill alt={"logo"} priority={true} />
-            </Link>
-            <div className={styles.header__choiceLocation}>
-              <div className={styles.header__choiceCityName}>Москва</div>
-              <div className={styles.header__choiceCityArrow}></div>
+        <div className={styles.header__top}>
+          <div className={styles.header__left}>
+            <div className={styles.header__logoWrapper}>
+              <Image
+                src={"logo.svg"}
+                width={280}
+                height={29}
+                alt="логотип"
+                priority={true}
+              />
             </div>
           </div>
-          <div></div>
         </div>
       </Container>
     </header>
